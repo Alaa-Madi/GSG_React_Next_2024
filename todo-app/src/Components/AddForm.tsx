@@ -7,8 +7,8 @@ interface IProps{
 const AddForm = (props:IProps) => {
     const handleSubmit=(e:React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const title= e.currentTarget["task"].value;
-        const isUrgent= e.currentTarget["urgent"].value;
+        const title:string= e.currentTarget["task"].value;
+        const isUrgent:boolean= e.currentTarget["urgent"].checked;
         if (title.length > 3){
             const newTask:IToDoItem ={
             id:Date.now(),
@@ -16,6 +16,7 @@ const AddForm = (props:IProps) => {
             isUrgent,
             isDone:false
         }
+        props.onSubmit(newTask);
         }
     }
 

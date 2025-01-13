@@ -42,6 +42,8 @@
 .todo-trash {
     cursor: pointer;
     transition: transform 0.2s ease;
+    margin-right: 50px;
+
 }
 
 .todo-trash:hover {

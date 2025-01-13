@@ -21,9 +21,7 @@ const ToDoItem = ({ data, onToggle, onDelete }: IProps) => {
             />
             <span className="todo-text">{data.title}</span>
             <span className="todo-trash">
-                <button className="trash-button" onClick={onDelete}>
-                    <Trash size={20} color="#c80404" />
-                </button>
+                 <Trash size={20} color="#c80404" weight="fill" onClick={onDelete}/>
             </span>
             <span>is Urgent: {data.isUrgent.toString()}</span>
         </div>

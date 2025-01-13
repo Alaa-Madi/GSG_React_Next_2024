@@ -1,6 +1,6 @@
 export interface IToDoItem {
-    id: number;
-    title: string;
-    isUrgent: boolean;
-    isDone: boolean;
-  }
+  id: number;
+  title: string;
+  isUrgent: boolean;
+  isDone: boolean;
+}
