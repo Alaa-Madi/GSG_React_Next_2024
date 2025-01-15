@@ -1,0 +1,55 @@
+/* ToDoItem.css */
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.todo-checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: #5c7cfa;
+    cursor: pointer;
+}
+
+.todo-text {
+    flex-grow: 1;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #495057;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.todo-checkbox:checked ~ .todo-text {
+    color: #adb5bd;
+    text-decoration: line-through;
+}
+
+.todo-trash {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-right: 50px;
+
+}
+
+.todo-trash:hover {
+    transform: scale(1.2);
+}
+
+.todo-trash:active {
+    transform: scale(1);
+}

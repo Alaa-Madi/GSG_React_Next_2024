@@ -1,0 +1,71 @@
+/* AddForm.css */
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-text {
+    width: 90%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-text:focus {
+    border-color: #5c7cfa;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input-checkbox {
+    accent-color: #5c7cfa;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-label {
+    font-size: 1rem;
+    color: #495057;
+}
+
+.submit-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #5c7cfa;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #4263eb;
+}
+
+.submit-button:active {
+    background-color: #364fc7;
+}
+
+.submit-button:focus {
+    outline: 2px solid #4263eb;
+    outline-offset: 2px;
+}
